@@ -14,7 +14,7 @@ class Particle(object):
     Representation of a simple, non-interacting, massive particle
     (assumes point-like, does not model charge).
     """
-    def __init__(self, position=[], velocity=[], mass=1.0):
+    def __init__(self, position, velocity, mass=1.0):
         """
         TODO: define attributes
         """
@@ -28,8 +28,11 @@ class Particle(object):
     def get_velocity(self):
         return self.velocity
 
+    def set_position(self, position):
+        self.position = position
 
-
+    def set_velocity(self, velocity):
+        self.velocity = velocity
 # TODO: Implement the equations of motion for a given potential
 
 # TODO: Populate the space
